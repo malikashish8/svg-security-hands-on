@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<head>
+  <title>SVG Embedded Page</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body>
+  <p>Right click and open these images in new tab to see if the protection works</p>
+  <h2>Without protection headers</h2>
+  <image src="/img/bad.svg" alt="Bad image" />
+  <h2>With Sandbox</h2>
+  <image src="/img/bad.svg?sandbox=true" alt="Bad image" />
+  <h2>CSP - script-scr none</h2>
+  <image src="/img/bad.svg?csp-src-none=true" alt="Bad image" />
+  <h2>Content Disposition</h2>
+  <image src="/img/bad.svg?content-disposition=true" alt="Bad image" />
+
+  <!-- <object data="/img/bad.svg" type="image/svg+xml" /> -->
+</body>
